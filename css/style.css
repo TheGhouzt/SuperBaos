@@ -1,13 +1,16 @@
-        p{
-            color: yellow;
-        }
-
-        body{
-            background-color: burlywood;
-        }
-        .colorUnico{
-            color: aquamarine;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-weight: bold;
-            font-size: small;
-        }
+p{
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-color: #EDBD82 !important;
+}
+.colorUnico{
+    color: white;
+    background-color: rgb(165, 50, 14);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: none;
+    margin-top: 50px;
+}
