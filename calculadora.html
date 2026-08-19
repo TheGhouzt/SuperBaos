@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ubicacion</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
@@ -28,10 +27,10 @@
             <a class="nav-link" href="menu.html">Menu</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="ubicacion.html">Ubicacion</a>
+            <a class="nav-link" href="ubicacion.html">Ubicacion</a>
             </li>
             <li>
-            <a class="nav-link" href="calculadora.html">Calculadora</a>
+            <a class="nav-link active" aria-current="page" href="calculadora.html">Calculadora</a>
             </li>
         </ul>
         </div>
@@ -40,6 +39,34 @@
 </header>
 
 <body>
+  <form>
+  <div class="mb-3 container">
+    <label for="n1" class="form-label">Primer Numero</label>
+    <input type="number" class="form-control" id="n1">
+  </div>
+
+  <div class="mb-3 container">
+    <label for="n2" class="form-label">Segundo Numero</label>
+    <input type="number" class="form-control" id="n2">
+  </div>
+</form>
+
+<div class="mb-3 container">
+  <button class="btn btn-primary" onclick="sumar()"">Sumar</button>
+  <button class="btn btn-primary" onclick="restar()"">Restar</button>
+  <h5><span id="resultado"></span></h5>
+</div>
+
+<script>
+  function sumar() {
+    let num1=document.getElementById("n1").value;
+    let num2=document.getElementById("n2").value;
+    let sum= parseFloat (num1)+parseFloat(num2)
+    console.log(sum);
+    document.getElementById("resultado").innerHTML=("El resultado es: "+sum)
+  }
+</script>
 
 </body>
+
 </html>
