@@ -9,7 +9,7 @@
 </head>
 
 <header>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary ">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html">SuperBaos Bros</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,33 +39,6 @@
 </header>
 
 <body>
-  <form>
-  <div class="mb-3 container">
-    <label for="n1" class="form-label">Primer Numero</label>
-    <input type="number" class="form-control" id="n1">
-  </div>
-
-  <div class="mb-3 container">
-    <label for="n2" class="form-label">Segundo Numero</label>
-    <input type="number" class="form-control" id="n2">
-  </div>
-</form>
-
-<div class="mb-3 container">
-  <button class="btn btn-primary" onclick="sumar()"">Sumar</button>
-  <button class="btn btn-primary" onclick="restar()"">Restar</button>
-  <h5><span id="resultado"></span></h5>
-</div>
-
-<script>
-  function sumar() {
-    let num1=document.getElementById("n1").value;
-    let num2=document.getElementById("n2").value;
-    let sum= parseFloat (num1)+parseFloat(num2)
-    console.log(sum);
-    document.getElementById("resultado").innerHTML=("El resultado es: "+sum)
-  }
-</script>
 
 </body>
 

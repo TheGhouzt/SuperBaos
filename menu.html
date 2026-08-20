@@ -38,6 +38,42 @@
 </nav>
 </header>
 
+  <form>
+  <div class="mb-3 container">
+    <label for="n1" class="form-label">Primer Numero</label>
+    <input type="number" class="form-control" id="n1">
+  </div>
+
+  <div class="mb-3 container">
+    <label for="n2" class="form-label">Segundo Numero</label>
+    <input type="number" class="form-control" id="n2">
+  </div>
+</form>
+
+<div class="mb-3 container">
+  <button class="btn btn-primary" onclick="sumar()">Sumar</button>
+  <button class="btn btn-primary" onclick="restar()">Restar</button>
+  <h5><span id="resultado"></span></h5>
+</div>
+
+<script>
+  function sumar() {
+    let num1=document.getElementById("n1").value;
+    let num2=document.getElementById("n2").value;
+    let sum= parseFloat (num1)+parseFloat(num2)
+    console.log(sum);
+    document.getElementById("resultado").innerHTML=("El resultado es: "+sum)
+  }
+
+  function restar(){
+    let num1=document.getElementById("n1").value;
+    let num2=document.getElementById("n2").value;
+    let res= parseFloat (num1)-parseFloat(num2)
+    console.log(res);
+    document.getElementById("resultado").innerHTML=("El resultado es: "+res)
+  }
+</script>
+
 <body>
 </body>
 </html>
