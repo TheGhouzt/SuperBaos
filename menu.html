@@ -44,26 +44,23 @@
   </nav>
 </header>
 
-<form>
-  <div class="mb-3 container">
-    <label for="n1" class="form-label">Primer Numero</label>
-    <input type="number" class="form-control" id="n1">
-  </div>
-
-  <div class="mb-3 container">
-    <label for="n2" class="form-label">Segundo Numero</label>
-    <input type="number" class="form-control" id="n2">
-  </div>
-</form>
-
-<div class="mb-3 container">
-  <button class="btn btn-primary" onclick="sumar()">Sumar</button>
-  <button class="btn btn-primary" onclick="restar()">Restar</button>
-  <h6><span id="resultado"></span></h6>
-</div>
-
 <body>
-  <script src="js/script.js"></script>
+  <main class="container mt-4">
+    <h2 class="text-center mb-4">Menu de Baos</h2>
+    <section class="menu-productos d-flex justify-content-center flex-wrap gap-4">
+      <!--Aqui se separa debido que esto es un articulo en este caso el PRODUCTO-->
+      <article class="tarjeta-producto text-center">
+        <!--En esta parte hay que cambiar las imagenes para cada bao-->
+        <img src="Img/baosC.png" alt="Bao de Cerdo" class="img-producto">
+        <h3>Bao de Cerdo</h3>
+        <p>Uno de los mejores baos para un dia agotador</p>
+        <p class="precio-usd" data-precio="5">Precio: $5 USD</p>
+        <!--En esta clase en el button lo que se agrega como succes significa = exito lo cual lo pinta de verde para la pag-->
+        <!--Por otra parte en el agregarAl.. dentro tendria el STRING y otro seria el NUMBER-->
+        <button class="btn btn-success" onclick="agregarAlCarrito('Bao de Cerdo', 5)">Añadir al Carrito</button>
+      </article>
+    </section>
+  </main>
 </body>
 
 </html>

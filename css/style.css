@@ -11,14 +11,14 @@ body {
   background-color: rgb(172, 16, 48);
 }
 
-.colorUnico {
+.colorTitulo {
   color: white;
-  background-color: rgb(165, 50, 14);
+  background-color: rgb(172, 16, 48);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 3rem;
   text-align: center;
   text-shadow: none;
-  margin-top: 50px;
+  margin-top: 45px;
 }
 
 header {
