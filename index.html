@@ -1,62 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SuperBaos Bros</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <title>SUPERBAOS - Classic Steam. Modern Feel.</title>
+  <link rel="stylesheet" href="css/style.css"> 
 </head>
-
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-baos" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">SuperBaos Bros</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="servicios.html">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="menu.html">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="ubicacion.html">Ubicacion</a>
-            </li>
-            <li>
-              <a class="nav-link" href="contacto.html">Contactos</a>
-            </li>
-            <li>
-              <a class="nav-link" href="galeria.html">Galeria</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+  <header class="encabezado">
+    <div class="logo">
+      <a href="index.html">
+      <img src="Img/logo.png" alt="Logo SuperBaos" class="logo-img">
+    </a>
+    </div>
+
+    <nav class="navegacion">
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="menu.html">MENÚ</a></li>
+        <li><a href="servicios.html">SERVICIOS</a></li>
+        <li><a href="galeria.html">GALERÍA</a></li>
+        <li><a href="ubicacion.html">UBICACIÓN</a></li>
+      </ul>
     </nav>
+    <a href="contacto.html" class="btn-menu">CONTACTO</a>
   </header>
-  <div class="container text-center">
-    <h1 class="colorTitulo">SuperBaos Bros</h1>
-    <img src="Img/baosC.png" alt="Logo de los Baos" height="300" width="400">
-    <p>MI PÁGINA DE SU-SU-SUPER-BAOOOOS</p>
-  </div>
 
-  <script>
-    fetch('https://uy.dolarapi.com/v1/cotizaciones/usd')
-      .then(response => response.json())
-      .then(datos => {
-        console.log(datos.compra)
-      })
-  </script>
+  <main class="contenedor-principal">
+    <section class="hero-titulo">
+      <h1>SUPERBAOS</h1>
+      <p class="subtitulo">Vapor clásico. Sensación moderna.</p>
+    </section>
 
+    <section class="banner-imagen">
+      <img src="Img/baosC.png" alt="Platillo de baos al vapor" class="imagen-hero">
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
 </body>
-
 </html>
