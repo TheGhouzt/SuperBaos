@@ -13,8 +13,11 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-baos" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">SuperBaos Bros</a>
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="Img/baosLogoBlanco.png" alt="Logo SuperBaos" width="43" height="43" class="me-2">
+          SuperBaos Bros
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -58,6 +61,23 @@
         <!--Por otra parte en el agregarAl.. dentro tendria el STRING y otro seria el NUMBER-->
         <button class="btn btn-success" onclick="agregarAlCarrito('Bao de Cerdo', 5)">Añadir al Carrito</button>
       </article>
+      <article>
+        <!--Aqui usare lo mismo del article para agregar mas productos-->
+      </article>
+    </section>
+    <section class="carrito-compras mt-5">
+      <h3 class="text-center">Tu Pedido</h3>
+      <!--table-striped seria una fila con colores distinguidos-->
+      <!--thead es el encabezado de la tabla lo cual estaria agregando el th-->
+      <table class="table table-striped mt-4 tabla-baos" id="tabla-carrito">
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Accion</th>
+          </tr>
+        </thead>
+      </table>
     </section>
   </main>
 </body>

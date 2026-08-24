@@ -11,6 +11,10 @@ body {
   background-color: rgb(172, 16, 48);
 }
 
+.tabla-baos th {
+  background-color: rgb(172, 16, 48) !important
+}
+
 .colorTitulo {
   color: white;
   background-color: rgb(172, 16, 48);
