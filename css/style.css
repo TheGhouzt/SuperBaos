@@ -1,24 +1,16 @@
-/* Importar tipografía limpia y moderna */
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap');
+p {
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
-/* Reset y Colores Generales */
 body {
-  background-color: hsl(42, 23%, 79%) !important;          /* Fondo crema vintage (Requisito background-color) */
-  color: #000000;                     /* Color de texto principal (Requisito color) */
-  font-family: 'Space Grotesk', monospace; /* Estilo tipográfico (Requisito font-family) */
-  margin: 0;                          /* Requisito margin */
-  padding: 0 40px;                    /* Requisito padding */
+  background-color: #EDBD82 !important;
 }
 
-/* Encabezado */
-.encabezado {
-  display: flex;                      /* Requisito display: flex */
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 0;                    /* Espaciado superior e inferior */
+.navbar-baos {
+  background-color: rgb(172, 16, 48);
 }
 
-<<<<<<< HEAD
 .tabla-baos th {
   background-color: rgb(172, 16, 48) !important
 }
@@ -31,123 +23,9 @@ body {
   text-align: center;
   text-shadow: none;
   margin-top: 45px;
-=======
-.logo {
-  font-size: 24px;
->>>>>>> 7bd97ac3285705ab35e9bfc0f96c2bb9f58ddea9
 }
 
-/* Menú de Navegación (Requisito 9) */
-.navegacion ul {
-  display: flex;                      /* Requisito display: flex */
-  gap: 30px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navegacion a {
-  text-decoration: none;
-  color: #000000;
-  font-size: 14px;                    /* Requisito font-size */
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  transition: opacity 0.3s ease;
-}
-
-.navegacion a:hover {                 /* Efecto hover (Requisito :hover) */
-  opacity: 0.6;
-}
-
-/* Botón Destacado estilo Píldora */
-.btn-menu {
-  background-color: #000000;
-  color: #FFFFFF;
-  padding: 10px 24px;                 /* Uso de padding */
-  border-radius: 50px;                /* Bordes totalmente redondeados (Requisito border-radius) */
-  text-decoration: none;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  transition: background-color 0.3s ease;
-}
-
-.btn-menu:hover {
-  background-color: #D62828;          /* Cambio de color al pasar el cursor */
-}
-
-/* Sección de Titular Hero */
-.hero-titulo {
-  text-align: center;                 /* Centrado de texto (Requisito text-align) */
-  margin: 40px 0 20px 0;              /* Uso de margin */
-}
-
-.hero-titulo h1 {
-  font-size: 80px;                    /* Letra grande e impactante */
-  margin: 0;
-  letter-spacing: 4px;
-  font-weight: 700;
-}
-
-.subtitulo {
-  font-size: 14px;
-  letter-spacing: 2.5px;
-  margin-top: 10px;                   /* Separación vertical */
-  color: #333333;
-}
-
-/* Banner de Imagen (Requisito 4) */
-.banner-imagen {
-  margin-bottom: 50px;                /* Margen exterior */
-}
-
-.imagen-hero {
-  width: 100%;                        /* Requisito width / max-width */
-  max-width: 1200px;
-  height: 500px;                      /* Fijamos altura proporcional */
-  object-fit: cover;                  /* Mantiene la foto sin deformar */
-  border-radius: 24px;                /* Bordes redondeados en la imagen (Requisito border-radius) */
-  display: block;
-  margin: 0 auto;                     /* Centrar elemento */
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Sombra suave (Requisito box-shadow) */
-  transition: transform 0.4s ease;
-}
-
-.imagen-hero:hover {                  /* Efecto CSS en imagen (Requisito :hover) */
-  transform: scale(1.01);
-}
-
-/* Adaptabilidad a dispositivos móviles (Requisito 8) */
-@media (max-width: 768px) {           /* Requisito @media */
-  body {
-    padding: 0 15px;                  /* Ajuste de margen en pantalla chica */
-  }
-
-  .encabezado {
-    flex-direction: column;           /* Cambiar menú a vertical */
-    gap: 15px;
-  }
-
-  .navegacion ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .hero-titulo h1 {
-    font-size: 42px;                  /* Reducir título en celulares */
-  }
-
-  .imagen-hero {
-    height: 300px;                    /* Menor altura en pantallas pequeñas */
-  }
-  .logo-img {
-  height: 75px; /* Ajusta este valor si lo quieres más grande o pequeño */
-  width: auto;
-  transition: transform 0.3s ease;
-}
-
-.logo-img:hover {
-  transform: scale(1.05); /* Le da un pequeño efecto al pasar el mouse */
-}
+header {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bolder;
 }
