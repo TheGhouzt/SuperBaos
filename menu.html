@@ -18,10 +18,6 @@
           <img src="Img/baosLogoBlanco.png" alt="Logo SuperBaos" width="43" height="43" class="me-2">
           SuperBaos Bros
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -48,21 +44,34 @@
     </nav>
   </header>
   <main class="container mt-4">
-    <h2 class="text-center mb-4">Menu de Baos</h2>
+    <h2 class="text-center mb-4 color-titulo">Menu de Baos</h2>
     <section class="menu-productos d-flex justify-content-center flex-wrap gap-4">
       <!--Aqui se separa debido que esto es un articulo en este caso el PRODUCTO-->
       <article class="tarjeta-producto text-center">
         <!--En esta parte hay que cambiar las imagenes para cada bao-->
-        <img src="" alt="Bao de Cerdo" class="img-producto">
+        <img src="Img/baoDeCerdo.png" alt="Bao de Cerdo" class="img-baos">
         <h3>Bao de Cerdo</h3>
         <p>Uno de los mejores baos para un dia agotador</p>
         <p class="precio-usd" data-precio="5">Precio: $5 USD</p>
         <!--En esta clase en el button lo que se agrega como succes significa = exito lo cual lo pinta de verde para la pag-->
         <!--Por otra parte en el agregarAl.. dentro tendria el STRING y otro seria el NUMBER-->
+        <button class="btn btn-success" onclick="agregarAlCarrito('Bao de Pollo', 5)">Añadir al Carrito</button>
+      </article>
+
+      <article class="tarjeta-producto text-center">
+        <img src="Img/baoDePollo.png" alt="Bao de Pollo" class="img-baos">
+        <h3>Bao de Pollo</h3>
+        <p>Si no te gusta el de Cerdo te dejamos esta deliciosa opcion tambien</p>
+        <p class="precio-usd" data-precio="5">Precio: $5 USD</p>
         <button class="btn btn-success" onclick="agregarAlCarrito('Bao de Cerdo', 5)">Añadir al Carrito</button>
       </article>
-      <article>
-        <!--Aqui usare lo mismo del article para agregar mas productos-->
+
+      <article class="tarjeta-producto text-center">
+        <img src="Img/baoVegano.png" alt="Bao Vegano" class="img-baos">
+        <h3>Bao Vegano</h3>
+        <p>Un bao perfecto para los veganos delicioso y bien preparado</p>
+        <p class="precio-usd" data-precio="5">Precio: $5 USD</p>
+        <button class="btn btn-success" onclick="agregarAlCarrito('Bao de Cerdo', 5)">Añadir al Carrito</button>
       </article>
     </section>
     <section class="carrito-compras mt-5">
@@ -77,6 +86,13 @@
             <th>Accion</th>
           </tr>
         </thead>
+        <tbody id="lista-carrito">
+          <!--En esta parte se guardara el item por js-->
+        </tbody>
+        <!--Esto hace que el texto vaya al final en este caso esta dentro de un container-->
+        <div class="text-end">
+          <h3>Total USD: $<span id="total-usd">0</span></h3>
+        </div>
       </table>
     </section>
   </main>
