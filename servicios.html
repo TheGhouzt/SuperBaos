@@ -43,6 +43,70 @@
       </div>
     </nav>
   </header>
+  <main class="contenedor-principal">
+    
+    <!-- Estos estilos se aplicarán SOLO a esta página -->
+    <style>
+      .grilla-productos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .tarjeta {
+        background-color: #FFFFFF;
+        padding: 20px;
+        margin: 15px 0;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        text-align: center;
+        border: 1px solid #e0e0e0;
+      }
+      .foto-producto {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+      }
+      .foto-producto:hover {
+        transform: scale(1.05);
+      }
+    </style>
+
+    <section class="hero-titulo" style="text-align: center; margin-top: 40px; margin-bottom: 30px;">
+      <h1 style="margin-bottom: 5px;">NUESTROS SERVICIOS</h1>
+      <p style="margin-top: 0;">MÁS QUE COMIDA, UNA EXPERIENCIA COMPLETA</p>
+    </section>
+
+    <!-- Usaremos Grid para mostrar los servicios -->
+    <section class="grilla-productos">
+      
+      <!-- Servicio 1 -->
+      <article class="tarjeta">
+        <img src="Img/delivery.png" alt="Servicio de Delivery" class="foto-producto">
+        <h2>Delivery Rápido</h2>
+        <p>Llevamos el vapor directamente a la puerta de tu casa u oficina para que disfrutes de nuestros baos recién hechos.</p>
+      </article>
+
+      <!-- Servicio 2 -->
+      <article class="tarjeta">
+        <img src="Img/catering.png" alt="Servicio de Catering" class="foto-producto">
+        <h2>Catering y Eventos</h2>
+        <p>Sorprende a los invitados de tu fiesta, matrimonio o evento corporativo con nuestras bandejas personalizadas.</p>
+      </article>
+
+      <!-- Servicio 3 -->
+      <article class="tarjeta">
+        <img src="Img/foodtruck.png" alt="Food Truck de SuperBaos" class="foto-producto">
+        <h2>Bao Truck en Festivales</h2>
+        <p>Llevamos nuestro carrito Food Truck a ferias, conciertos y festivales. ¡Sigue nuestras redes para saber dónde estaremos!</p>
+      </article>
+
+    </section>
+  </main>
 </body>
 
 </html>
