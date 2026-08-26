@@ -29,8 +29,8 @@ header {
 
   .color-titulo {
     font-size: 1.8rem;
-    margin: left 0%;
-    margin: right 0%;
+    margin: left 0;
+    margin: right 0;
   }
 
   .color-titulo-index {
@@ -43,7 +43,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
   margin: 20px 2.1%
 }
 
@@ -52,7 +52,7 @@ header {
 }
 
 .tabla-baos th {
-  background-color: rgb(172, 16, 48) !important
+  background-color: rgb(172, 16, 48) !important;
 }
 
 .banner-baos img {
@@ -90,8 +90,6 @@ header {
   margin-bottom: 2%;
   padding: 10px 10px;
   display: block;
-  margin-left: -150px;
-  margin-right: -150px;
 }
 
 .color-desc {
@@ -100,6 +98,10 @@ header {
   border: 2.1px solid black;
   font-size: 1.2rem;
   padding: 10px;
+}
+
+.contenedor-center {
+  width: 50%;
 }
 
 .contenedor-left {
@@ -130,7 +132,6 @@ header {
 
 .tarjeta-producto:hover {
   transform: translateY(-10px);
-  box-shadow: 0;
 }
 
 .grilla-productos {
